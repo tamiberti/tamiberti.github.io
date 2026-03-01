@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Elegant Slate Design System - Professional & Minimalist 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Palette Colors - Warm rosé/peach watercolor from cover */
+    --background: 25 33% 95%;
+    --foreground: 18 40% 28%;
+    
+    --card: 25 33% 95%;
+    --card-foreground: 18 40% 28%;
+    
+    --popover: 25 33% 95%;
+    --popover-foreground: 18 40% 28%;
+    
+    --primary: 18 45% 68%;
+    --primary-foreground: 20 42% 22%;
+    
+    --secondary: 22 35% 85%;
+    --secondary-foreground: 18 40% 26%;
+    
+    --muted: 20 28% 65%;
+    --muted-foreground: 18 30% 45%;
+    
+    --accent: 14 50% 74%;
+    --accent-foreground: 18 40% 22%;
+    
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 25 33% 95%;
+    
+    --border: 20 30% 82%;
+    --input: 20 30% 82%;
+    --ring: 18 45% 68%;
+    
+    --radius: 0.5rem;
+    
+    /* Soft Shadows */
+    --shadow-soft: 0 2px 12px -6px hsl(18 40% 28% / 0.08);
+    --shadow-medium: 0 4px 20px -10px hsl(18 40% 28% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 20% 25%;
+    --foreground: 30 25% 92%;
+    
+    --card: 25 20% 30%;
+    --card-foreground: 30 25% 92%;
+    
+    --popover: 25 20% 25%;
+    --popover-foreground: 30 25% 92%;
+    
+    --primary: 10 30% 75%;
+    --primary-foreground: 25 20% 25%;
+    
+    --secondary: 25 25% 75%;
+    --secondary-foreground: 25 20% 25%;
+    
+    --muted: 25 20% 40%;
+    --muted-foreground: 30 25% 85%;
+    
+    --accent: 10 30% 75%;
+    --accent-foreground: 25 20% 25%;
+    
+    --destructive: 0 50% 40%;
+    --destructive-foreground: 30 25% 92%;
+    
+    --border: 25 20% 45%;
+    --input: 25 20% 45%;
+    --ring: 10 30% 75%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
