@@ -13,6 +13,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - run : npm i && npm run deploy -- -m "Deploy React app to GitHub Pages"
+    - run : git config --global user.name github-actions && git config --global user.email github-actions@github.com && npm i && npm run deploy -- -m "Deploy React app to GitHub Pages"
       shell: bash
       
