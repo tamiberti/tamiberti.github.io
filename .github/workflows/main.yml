@@ -13,8 +13,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - run: npm i
-      shell: bash
-    - run : npm run deploy -- -m "Deploy React app to GitHub Pages"
+    - run : npm i && npm run deploy -- -m "Deploy React app to GitHub Pages"
       shell: bash
       
